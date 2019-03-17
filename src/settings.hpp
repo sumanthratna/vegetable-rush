@@ -25,7 +25,7 @@ int gunHealth;
 float const gunSpeed = 10;
 int const gunShootDelay = 300;
 int const gunShootBonusDelay = 50;
-int const gunTextureCount = 10;
+int const gunTextureCount = 1; //TODO add more?
 
 // Alien
 float const alienWidth = 50;
@@ -143,7 +143,7 @@ void ChangeResolution()
 {
   auto & res = resolution[resolutionItem];
   pMainWindow->setFixedSize(res.first, res.second);
-  resolutionRate = (float)res.first / windowWidth;
+  resolutionRate = res.first / windowWidth;
 }
 
 // Load settings from file

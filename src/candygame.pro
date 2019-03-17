@@ -1,15 +1,9 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2016-11-14T11:48:37
-#
-#-------------------------------------------------
-
 QT += core gui \
     multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = invaders-GL
+TARGET = VegetableRush
 TEMPLATE = app
 LANGUAGE = C++
 

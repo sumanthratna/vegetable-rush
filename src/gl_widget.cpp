@@ -14,6 +14,8 @@ GLWidget::GLWidget(MainWindow * mw, QColor const & background)
   : m_mainWindow(mw), m_background(background)
 {
   m_mainWindow->setFixedSize(800, 600);
+  m_mainWindow->setWindowTitle("Vegetable Rush");
+  m_mainWindow->setStyleSheet("background: url(:data/models/background.png)");
   setFocusPolicy(Qt::StrongFocus);
 }
 

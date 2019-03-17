@@ -206,7 +206,7 @@ public:
 
         Blending(false);
 
-        DrawText("SPACE INVADERS", 40, 150, 100, Qt::white);
+        DrawText("VEGETABLE RUSH", 40, 150, 100, Qt::white);
         DrawText("DIFFICULTY", 275, 230, 50, Qt::white);
         DrawText("RESOLUTION", 270, 320, 50, Qt::white);
         DrawText("GUN SKIN", 297, 410, 50, Qt::white);

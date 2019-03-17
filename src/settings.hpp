@@ -39,7 +39,7 @@ float alienSpeedInc;
 float alienShootPossibility;
 float alienShootPossibilityInc;
 float alienRayWidth;
-int const alienTextureCount = 15;
+int const alienTextureCount = 7;
 
 // Bullet
 float const bulletWidth = 3;

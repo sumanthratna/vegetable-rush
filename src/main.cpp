@@ -17,7 +17,6 @@ int main(int argc, char ** argv)
 
   QFontDatabase::addApplicationFont(":/data/fonts/arcade.regular.ttf");
 
-  a.setStyleSheet("background: url(:/data/models/background.png)");
   a.setApplicationName("Vegetable Rush");
 
   MainWindow mw;

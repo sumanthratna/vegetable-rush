@@ -7,13 +7,13 @@
 
 class MainWindow : public QMainWindow
 {
-  Q_OBJECT
+Q_OBJECT
 
 public:
-  MainWindow();
+MainWindow();
 
 private:
-  QTimer * m_timer = nullptr;
-  QGridLayout * m_layout = nullptr;
-  QOpenGLWidget * m_glWidget = nullptr;
+QTimer * m_timer = nullptr;
+QGridLayout * m_layout = nullptr;
+QOpenGLWidget * m_glWidget = nullptr;
 };

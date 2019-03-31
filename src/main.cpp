@@ -17,9 +17,8 @@ int main(int argc, char ** argv)
 
   QFontDatabase::addApplicationFont(":/data/fonts/arcade.regular.ttf");
 
-  a.setApplicationName("Vegetable Rush");
-
   MainWindow mw;
+//  a.setApplicationName("SUMANTH RATNA, ADITYA MENACHERY, STEVEN LI (Period 5)");
   mw.show();
   return a.exec();
 }

@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = VegetableRush1.0.0
-DISTDIR = /Users/suman/quantum/candygame\ v2/build-candygame-Desktop_Qt_5_12_2_clang_64bit-Debug/.tmp/VegetableRush1.0.0
+DISTDIR = /Users/suman/quantum/vegetable-rush/build-candygame-Desktop_Qt_5_12_2_clang_64bit-Debug/.tmp/VegetableRush1.0.0
 LINK          = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 LFLAGS        = -stdlib=libc++ -headerpad_max_install_names $(EXPORT_ARCH_ARGS) -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -mmacosx-version-min=10.12 -Wl,-rpath,@executable_path/../Frameworks -Wl,-rpath,/Users/suman/Qt/5.12.2/clang_64/lib
 LIBS          = $(SUBLIBS) -F/Users/suman/Qt/5.12.2/clang_64/lib -framework QtMultimedia -framework QtWidgets -framework QtGui -framework QtNetwork -framework QtCore -framework DiskArbitration -framework IOKit -framework OpenGL -framework AGL   
@@ -276,7 +276,7 @@ EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
 EXPORT_VALID_ARCHS = x86_64
 EXPORT_ACTIVE_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(ARCHS))
 EXPORT_ARCH_ARGS = $(foreach arch, $(if $(EXPORT_ACTIVE_ARCHS), $(EXPORT_ACTIVE_ARCHS), $(EXPORT_VALID_ARCHS)), -arch $(arch))
-EXPORT__PRO_FILE_ = /Users/suman/quantum/candygame v2/src/candygame.pro
+EXPORT__PRO_FILE_ = /Users/suman/quantum/vegetable-rush/src/candygame.pro
 
 
 include /Users/suman/Qt/5.12.2/clang_64/mkspecs/features/mac/sdk.mk
@@ -723,19 +723,11 @@ qrc_data.cpp: ../src/data.qrc \
 		../src/data/models/explosion.png \
 		../src/data/models/alien/alien7.png \
 		../src/data/models/alien/alien2.png \
-		../src/data/models/alien/alien11.png \
 		../src/data/models/alien/alien6.png \
-		../src/data/models/alien/alien15.png \
 		../src/data/models/alien/alien1.png \
-		../src/data/models/alien/alien10.png \
 		../src/data/models/alien/alien5.png \
-		../src/data/models/alien/alien14.png \
-		../src/data/models/alien/alien9.png \
 		../src/data/models/alien/alien4.png \
-		../src/data/models/alien/alien13.png \
-		../src/data/models/alien/alien8.png \
 		../src/data/models/alien/alien3.png \
-		../src/data/models/alien/alien12.png \
 		../src/data/models/obstacle/bad1.png \
 		../src/data/models/obstacle/good3.png \
 		../src/data/models/obstacle/mid3.png \
@@ -804,7 +796,7 @@ moc_gl_widget.cpp: ../src/gl_widget.hpp \
 		../../../Qt/5.12.2/clang_64/lib/QtGui.framework/Headers/qvector2d.h \
 		moc_predefs.h \
 		../../../Qt/5.12.2/clang_64/bin/moc
-	/Users/suman/Qt/5.12.2/clang_64/bin/moc $(DEFINES) --include '/Users/suman/quantum/candygame v2/build-candygame-Desktop_Qt_5_12_2_clang_64bit-Debug/moc_predefs.h' -I/Users/suman/Qt/5.12.2/clang_64/mkspecs/macx-clang -I'/Users/suman/quantum/candygame v2/src' -I/Users/suman/Qt/5.12.2/clang_64/lib/QtMultimedia.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtWidgets.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtGui.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtNetwork.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/suman/Qt/5.12.2/clang_64/lib ../src/gl_widget.hpp -o moc_gl_widget.cpp
+	/Users/suman/Qt/5.12.2/clang_64/bin/moc $(DEFINES) --include /Users/suman/quantum/vegetable-rush/build-candygame-Desktop_Qt_5_12_2_clang_64bit-Debug/moc_predefs.h -I/Users/suman/Qt/5.12.2/clang_64/mkspecs/macx-clang -I/Users/suman/quantum/vegetable-rush/src -I/Users/suman/Qt/5.12.2/clang_64/lib/QtMultimedia.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtWidgets.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtGui.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtNetwork.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/suman/Qt/5.12.2/clang_64/lib ../src/gl_widget.hpp -o moc_gl_widget.cpp
 
 moc_mainwindow.cpp: ../src/mainwindow.hpp \
 		../../../Qt/5.12.2/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
@@ -817,7 +809,7 @@ moc_mainwindow.cpp: ../src/mainwindow.hpp \
 		../../../Qt/5.12.2/clang_64/lib/QtWidgets.framework/Headers/qopenglwidget.h \
 		moc_predefs.h \
 		../../../Qt/5.12.2/clang_64/bin/moc
-	/Users/suman/Qt/5.12.2/clang_64/bin/moc $(DEFINES) --include '/Users/suman/quantum/candygame v2/build-candygame-Desktop_Qt_5_12_2_clang_64bit-Debug/moc_predefs.h' -I/Users/suman/Qt/5.12.2/clang_64/mkspecs/macx-clang -I'/Users/suman/quantum/candygame v2/src' -I/Users/suman/Qt/5.12.2/clang_64/lib/QtMultimedia.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtWidgets.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtGui.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtNetwork.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/suman/Qt/5.12.2/clang_64/lib ../src/mainwindow.hpp -o moc_mainwindow.cpp
+	/Users/suman/Qt/5.12.2/clang_64/bin/moc $(DEFINES) --include /Users/suman/quantum/vegetable-rush/build-candygame-Desktop_Qt_5_12_2_clang_64bit-Debug/moc_predefs.h -I/Users/suman/Qt/5.12.2/clang_64/mkspecs/macx-clang -I/Users/suman/quantum/vegetable-rush/src -I/Users/suman/Qt/5.12.2/clang_64/lib/QtMultimedia.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtWidgets.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtGui.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtNetwork.framework/Headers -I/Users/suman/Qt/5.12.2/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/suman/Qt/5.12.2/clang_64/lib ../src/mainwindow.hpp -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

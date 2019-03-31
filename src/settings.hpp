@@ -67,8 +67,8 @@ int const bonusTextureCount = 3;
 int const starCount = 60;
 
 // Explosion
-int const explosionSpeed = 20;
-int const explosionFrames = 15;
+int const explosionSpeed = 0; //20;
+int const explosionFrames = 0; //15;
 
 // Options
 std::string const settingsFile = "/data/settings.xml";

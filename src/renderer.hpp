@@ -170,6 +170,7 @@ public:
 
         Blending(false);
 
+        DrawText("SUMANTH RATNA, STEVEN LI, AND ADITYA MENACHERY", 260, 20, 12, Qt::blue);
         DrawText("SCORE", 20, 60, 50, Qt::white);
         DrawText("LEVEL", 570, 60, 50, Qt::white);
         DrawText(QString::number(score), 170, 60, 50, Qt::green);
